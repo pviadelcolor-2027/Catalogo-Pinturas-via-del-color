@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinturas Vía del Color — Todas las marcas, al mejor precio</title>
+<meta property="og:title" content="Pinturas Vía del Color">
+<meta property="og:description" content="Todas las marcas de pintura en Bogotá al mejor precio. Alquiler de andamios con cotizador en línea.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16132B; --ink2:#241F45; --paper:#FBF8F3; --card:#FFFFFF; --line:#E9E3D8;
+  --muted:#6B6783;
+  --rojo:#E63946; --naranja:#FF8C42; --amarillo:#FFC93C; --verde:#2BB673; --azul:#2D7DD2; --violeta:#7B4FD6;
+  --wa:#25D366; --wa2:#128C7E;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#EDE8DF;color:var(--ink);font-family:'DM Sans',sans-serif;display:flex;justify-content:center}
+.app{width:100%;max-width:480px;background:var(--paper);min-height:100vh;position:relative;padding-bottom:150px;overflow-x:hidden;box-shadow:0 0 60px rgba(22,19,43,.15)}
+h1,h2,h3,.disp{font-family:'Bricolage Grotesque',sans-serif}
+button{font-family:inherit;cursor:pointer;border:none}
+a{text-decoration:none;color:inherit}
+
+/* ───── HERO ───── */
+.hero{background:radial-gradient(120% 80% at 80% 0%,#3a2f7a 0%,var(--ink) 60%);color:#fff;padding:34px 22px 90px;position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.9;animation:float 7s ease-in-out infinite}
+.b1{width:120px;height:120px;background:var(--rojo);top:-30px;right:-30px}
+.b2{width:70px;height:70px;background:var(--amarillo);top:120px;right:34px;animation-delay:-2s}
+.b3{width:46px;height:46px;background:var(--azul);top:60px;right:150px;animation-delay:-4s}
+.b4{width:90px;height:90px;background:var(--verde);bottom:40px;left:-34px;animation-delay:-1s;opacity:.55}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.brand{display:flex;align-items:center;gap:12px;position:relative;z-index:2}
+.mark{width:50px;height:50px;border-radius:50%;background:conic-gradient(var(--rojo),var(--naranja),var(--amarillo),var(--verde),var(--azul),var(--violeta),var(--rojo));display:grid;place-items:center;flex-shrink:0}
+.mark::after{content:'';width:22px;height:22px;border-radius:50%;background:var(--ink)}
+.brand-name{font-family:'Bricolage Grotesque';font-weight:800;font-size:17px;letter-spacing:.5px;line-height:1.05;text-transform:uppercase}
+.brand-name small{display:block;font-family:'DM Sans';font-weight:500;font-size:10px;letter-spacing:3px;color:rgba(255,255,255,.6)}
+.hero h1{font-size:40px;line-height:1.02;font-weight:800;margin-top:44px;position:relative;z-index:2;letter-spacing:-1px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--amarillo),var(--naranja),var(--rojo));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{margin-top:14px;font-size:14px;line-height:1.6;color:rgba(255,255,255,.75);max-width:330px;position:relative;z-index:2}
+.hero-cta{display:flex;gap:10px;margin-top:24px;position:relative;z-index:2;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:14px;font-weight:700;font-size:13px;transition:transform .15s}
+.btn:active{transform:scale(.96)}
+.btn-primary{background:var(--amarillo);color:var(--ink)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.btn-wa{background:linear-gradient(135deg,var(--wa2),var(--wa));color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.3)}
+/* gotas de pintura */
+.drips{position:absolute;left:0;right:0;bottom:-1px;line-height:0;z-index:3}
+.drips svg{width:100%;height:56px;display:block}
+
+/* ───── STATS ───── */
+.stats{margin:-34px 16px 0;position:relative;z-index:5;background:var(--card);border-radius:20px;display:grid;grid-template-columns:repeat(3,1fr);padding:18px 8px;box-shadow:0 14px 40px rgba(22,19,43,.12);border:1px solid var(--line)}
+.stat{text-align:center;border-right:1px solid var(--line);padding:0 6px}
+.stat:last-child{border:none}
+.stat b{font-family:'Bricolage Grotesque';font-size:22px;font-weight:800;display:block}
+.stat span{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.5px}
+
+/* ───── SECCIONES ───── */
+.sec{padding:34px 16px 0}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--rojo);display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:'';width:22px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--rojo),var(--amarillo))}
+.sec h2{font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-.5px;line-height:1.05}
+.sec p.lead{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.6}
+
+/* marcas */
+.marquee{margin-top:16px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:10px;width:max-content;animation:slide 32s linear infinite}
+.chipb{background:var(--card);border:1px solid var(--line);border-radius:30px;padding:9px 18px;font-weight:700;font-size:12px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.chipb i{width:9px;height:9px;border-radius:50%;display:inline-block}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* buscador + filtros */
+.search{margin-top:18px;position:relative}
+.search input{width:100%;padding:15px 16px 15px 46px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);font:500 14px 'DM Sans';color:var(--ink);outline:none}
+.search input:focus{border-color:var(--violeta);box-shadow:0 0 0 4px rgba(123,79,214,.12)}
+.search span{position:absolute;left:16px;top:50%;transform:translateY(-50%);font-size:16px}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:14px 16px;margin:0 -16px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.f{flex-shrink:0;padding:9px 16px;border-radius:30px;background:var(--card);border:1.5px solid var(--line);font-weight:600;font-size:12px;color:var(--ink);transition:.2s}
+.f.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sel-brand{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-bottom:12px}
+.sel-brand select{flex:1;padding:10px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);font:600 13px 'DM Sans';color:var(--ink)}
+
+/* productos */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.prod{background:var(--card);border-radius:18px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;animation:pop .35s both}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.prod-img{height:120px;display:grid;place-items:center;position:relative}
+.prod-img svg{width:78px;height:auto;filter:drop-shadow(0 8px 8px rgba(0,0,0,.18))}
+.tag{position:absolute;top:8px;left:8px;background:rgba(255,255,255,.92);font-size:9px;font-weight:700;letter-spacing:1px;padding:3px 8px;border-radius:20px;text-transform:uppercase}
+.prod-body{padding:12px;display:flex;flex-direction:column;flex:1}
+.prod-brand{font-size:9px;font-weight:700;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.prod-name{font-weight:700;font-size:13px;line-height:1.25;margin-top:3px;min-height:33px}
+.prod-pres{font-size:11px;color:var(--muted);margin-top:3px}
+.prod-foot{margin-top:auto;padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.price{font-family:'Bricolage Grotesque';font-weight:800;font-size:17px}
+.add{background:var(--ink);color:#fff;width:34px;height:34px;border-radius:11px;font-size:18px;font-weight:700;line-height:1}
+.qty{display:flex;align-items:center;gap:2px;background:var(--paper);border-radius:11px;border:1px solid var(--line)}
+.qty button{background:none;width:28px;height:32px;font-size:16px;font-weight:700;color:var(--ink)}
+.qty b{min-width:16px;text-align:center;font-size:13px}
+.empty{grid-column:1/-1;text-align:center;padding:40px 10px;color:var(--muted);font-size:13px}
+.note{margin-top:14px;font-size:11px;color:var(--muted);text-align:center;line-height:1.5}
+
+/* ───── ANDAMIOS ───── */
+.and{margin-top:40px;background:linear-gradient(170deg,var(--ink) 0%,var(--ink2) 100%);color:#fff;padding:44px 16px 36px;position:relative;overflow:hidden}
+.and::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 38px),repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 1px,transparent 1px 38px);pointer-events:none}
+.and>*{position:relative}
+.and .eyebrow{color:var(--amarillo)}
+.and .eyebrow::before{background:var(--amarillo)}
+.and h2{color:#fff}
+.and p.lead{color:rgba(255,255,255,.7)}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.perk{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px}
+.perk span{font-size:22px}
+.perk b{display:block;font-size:13px;margin-top:6px}
+.perk small{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;display:block;margin-top:2px}
+
+.calc{background:var(--card);color:var(--ink);border-radius:24px;padding:20px;margin-top:22px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.calc h3{font-size:20px;font-weight:800;display:flex;align-items:center;gap:8px}
+.calc .sub{font-size:12px;color:var(--muted);margin-top:4px}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--paper);border-radius:14px;padding:4px;margin-top:16px;border:1px solid var(--line)}
+.seg button{background:none;padding:10px 6px;border-radius:11px;font-weight:700;font-size:12px;color:var(--muted)}
+.seg button.on{background:var(--ink);color:#fff}
+.fld{margin-top:16px}
+.fld label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between}
+.fld label output{color:var(--ink);font-family:'Bricolage Grotesque';font-size:15px;letter-spacing:0;text-transform:none}
+input[type=range]{width:100%;margin-top:10px;accent-color:var(--violeta);height:6px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.num{margin-top:8px;width:100%;padding:12px;border-radius:12px;border:1.5px solid var(--line);font:700 16px 'Bricolage Grotesque';outline:none;background:var(--paper)}
+.num:focus{border-color:var(--violeta)}
+.stepper{display:flex;align-items:center;justify-content:space-between;margin-top:8px;background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:4px}
+.stepper button{width:42px;height:40px;border-radius:10px;background:var(--ink);color:#fff;font-size:20px;font-weight:700}
+.stepper b{font-family:'Bricolage Grotesque';font-size:22px}
+.check{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:13px;font-weight:600;padding:12px;background:var(--paper);border-radius:12px;border:1px solid var(--line)}
+.check input{width:18px;height:18px;accent-color:var(--violeta)}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.badge{font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;background:#EEF0FB;color:var(--ink2)}
+.badge.hot{background:#E7F8EF;color:#0b7a46}
+
+.result{margin-top:20px;background:linear-gradient(135deg,var(--ink),#3a2f7a);color:#fff;border-radius:20px;padding:20px;position:relative;overflow:hidden}
+.result::after{content:'';position:absolute;width:140px;height:140px;border-radius:50%;background:var(--amarillo);opacity:.12;right:-40px;top:-40px}
+.result .lbl{font-size:10px;letter-spacing:3px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase}
+.result .total{font-family:'Bricolage Grotesque';font-weight:800;font-size:42px;color:var(--amarillo);line-height:1.1;margin:4px 0 12px}
+.line{display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0;border-top:1px dashed rgba(255,255,255,.18);color:rgba(255,255,255,.85)}
+.line b{color:#fff}
+.line.save b{color:#6BF0A5}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.kpi{background:rgba(255,255,255,.1);border-radius:12px;padding:10px}
+.kpi small{font-size:10px;color:rgba(255,255,255,.6);display:block}
+.kpi b{font-family:'Bricolage Grotesque';font-size:16px}
+.calc .btn-wa{width:100%;margin-top:14px;padding:15px;font-size:13px;letter-spacing:.5px}
+.fine{font-size:10.5px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5}
+
+/* ───── CONTACTO ───── */
+.contact{padding:36px 16px 20px}
+.wa-card{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--wa2),var(--wa));color:#fff;padding:20px;border-radius:22px;margin-top:16px;box-shadow:0 12px 30px rgba(37,211,102,.3)}
+.wa-card .ic{font-size:38px}
+.wa-card b{font-family:'Bricolage Grotesque';font-size:19px;display:block}
+.wa-card small{font-size:12px;opacity:.85}
+.info{margin-top:12px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px 16px}
+.info div{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+.info div:last-child{border:none}
+.info span{font-size:18px}
+.info small{display:block;color:var(--muted);font-size:11px;margin-top:1px}
+.footer{background:var(--ink);color:#fff;text-align:center;padding:32px 20px 30px;margin-top:20px}
+.footer .brand{justify-content:center}
+.footer .tag{font-size:12px;color:rgba(255,255,255,.5);margin-top:12px}
+.stripe{height:5px;background:linear-gradient(90deg,var(--rojo),var(--naranja),var(--amarillo),var(--verde),var(--azul),var(--violeta))}
+
+/* ───── BARRAS FIJAS ───── */
+.cartbar{position:fixed;bottom:76px;left:50%;transform:translate(-50%,120px);width:calc(100% - 28px);max-width:452px;background:var(--ink);color:#fff;border-radius:18px;padding:12px 12px 12px 18px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 14px 34px rgba(22,19,43,.4);transition:transform .35s cubic-bezier(.2,.9,.3,1.2);z-index:60}
+.cartbar.show{transform:translate(-50%,0)}
+.cartbar small{font-size:10px;color:rgba(255,255,255,.6);display:block;letter-spacing:1px;text-transform:uppercase}
+.cartbar b{font-family:'Bricolage Grotesque';font-size:18px}
+.cartbar .btn{padding:11px 16px}
+.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:8px 6px calc(8px + env(safe-area-inset-bottom));z-index:70}
+.nav a{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;font-weight:700;color:var(--muted);padding:6px 0;border-radius:12px;transition:.2s}
+.nav a span{font-size:19px}
+.nav a.on{color:var(--ink);background:#F3EEFB}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ═════════ HERO ═════════ -->
+<header class="hero" id="inicio">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
+  <div class="brand">
+    <div class="mark"></div>
+    <div class="brand-name">Pinturas<br>Vía del Color<small>BOGOTÁ · COLOMBIA</small></div>
+  </div>
+  <h1>Todas las marcas.<br><em>Un solo lugar.</em></h1>
+  <p class="sub">Las mejores marcas de pintura de Bogotá a precios que sí te convienen. Y además, alquilamos andamios para que tu obra salga perfecta.</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#pinturas">🎨 Ver pinturas</a>
+    <a class="btn btn-ghost" href="#andamios">🏗️ Cotizar andamios</a>
+  </div>
+  <div class="drips">
+    <svg viewBox="0 0 480 56" preserveAspectRatio="none"><path fill="#FBF8F3" d="M0 56V30c20 0 20 14 40 14s14-30 38-30 14 34 40 34 18-22 42-22 16 26 44 26 14-34 42-34 18 30 42 30 12-18 38-18 16 20 42 20 14-22 42-22V56z"/></svg>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>+20</b><span>MARCAS</span></div>
+  <div class="stat"><b>🏷️</b><span>MEJOR PRECIO</span></div>
+  <div class="stat"><b>🏗️</b><span>ANDAMIOS</span></div>
+</div>
+
+<!-- ═════════ PINTURAS ═════════ -->
+<section class="sec" id="pinturas">
+  <div class="eyebrow">Catálogo</div>
+  <h2>Nuestras pinturas</h2>
+  <p class="lead">Arma tu cotización: toca <b>+</b> en los productos que necesitas y envíala por WhatsApp.</p>
+
+  <div class="marquee"><div class="track" id="marquee"></div></div>
+
+  <div class="search"><span>🔍</span><input id="q" type="search" placeholder="Busca vinilo, esmalte, marca…"></div>
+  <div class="filters" id="cats"></div>
+  <div class="sel-brand"><span>Marca:</span><select id="brandSel"></select></div>
+
+  <div class="grid" id="grid"></div>
+  <p class="note">Precios de referencia sujetos a cambio. Pregúntanos por descuentos en compras por volumen. 🎨</p>
+</section>
+
+<!-- ═════════ ANDAMIOS ═════════ -->
+<section class="and" id="andamios">
+  <div class="eyebrow">Alquiler</div>
+  <h2>Alquiler de andamios</h2>
+  <p class="lead">Trabaja en altura de forma segura sin comprar equipo. Calcula en segundos cuánto invertirías.</p>
+
+  <div class="perks">
+    <div class="perk"><span>🛡️</span><b>Seguros y firmes</b><small>Equipo revisado y listo para usar.</small></div>
+    <div class="perk"><span>💸</span><b>Sin inversión grande</b><small>Paga solo los días que lo uses.</small></div>
+    <div class="perk"><span>🚚</span><b>Entrega en obra</b><small>Opcional, en Bogotá.</small></div>
+    <div class="perk"><span>📉</span><b>Más días, menos precio</b><small>Descuentos por tiempo.</small></div>
+  </div>
+
+  <div class="calc" id="calc">
+    <h3>🧮 Calcula tu inversión</h3>
+    <div class="sub">Ajusta los datos y mira el costo estimado al instante.</div>
+
+    <div class="seg">
+      <button id="m1" class="on">Sé cuántos cuerpos</button>
+      <button id="m2">Calcular por medidas</button>
+    </div>
+
+    <div id="modo1" class="fld">
+      <label>Cuerpos de andamio</label>
+      <div class="stepper"><button id="cMenos">−</button><b id="cVal">6</b><button id="cMas">+</button></div>
+    </div>
+
+    <div id="modo2" style="display:none">
+      <div class="row2">
+        <div class="fld"><label>Ancho fachada (m)</label><input class="num" id="ancho" type="number" min="1" value="8" inputmode="decimal"></div>
+        <div class="fld"><label>Alto a pintar (m)</label><input class="num" id="alto" type="number" min="1" value="6" inputmode="decimal"></div>
+      </div>
+      <div class="badges"><span class="badge" id="badgeCuerpos">—</span><span class="badge">Estimado: 1 cuerpo = 2 m ancho × 1,5 m alto</span></div>
+    </div>
+
+    <div class="fld">
+      <label>Días de alquiler <output id="dVal">7</output></label>
+      <input type="range" id="dias" min="1" max="60" value="7">
+      <div class="badges" id="descBadges"></div>
+    </div>
+
+    <label class="check"><input type="checkbox" id="transp" checked> 🚚 Incluir transporte (entrega y recogida)</label>
+
+    <div class="result">
+      <div class="lbl">Inversión estimada</div>
+      <div class="total" id="total">$0</div>
+      <div class="line"><span>Alquiler (<span id="rDet">—</span>)</span><b id="rSub">$0</b></div>
+      <div class="line save" id="rDescRow"><span id="rDescLbl">Descuento</span><b id="rDesc">−$0</b></div>
+      <div class="line"><span>Transporte</span><b id="rTr">$0</b></div>
+      <div class="kpis">
+        <div class="kpi"><small>Costo por día</small><b id="kDia">$0</b></div>
+        <div class="kpi" id="kmWrap"><small>Costo por m² de fachada</small><b id="kM2">—</b></div>
+      </div>
+    </div>
+
+    <a class="btn btn-wa" id="calcWa" target="_blank" rel="noopener">📲 Solicitar esta cotización</a>
+    <div class="fine">Valor estimado. La cotización final puede variar según disponibilidad, ubicación y condiciones de la obra.</div>
+  </div>
+</section>
+
+<!-- ═════════ CONTACTO ═════════ -->
+<section class="contact" id="contacto">
+  <div class="eyebrow">Contáctanos</div>
+  <h2 class="disp" style="font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-.5px">Hablemos de tu obra</h2>
+  <a class="wa-card" id="waMain" target="_blank" rel="noopener">
+    <span class="ic">📲</span>
+    <div><b>Escríbenos por WhatsApp</b><small>Respuesta rápida · Cotizaciones sin compromiso</small></div>
+  </a>
+  <div class="info">
+    <div><span>📍</span><div>Bogotá, Colombia<small>Agrega aquí la dirección de la tienda</small></div></div>
+    <div><span>🕐</span><div>Lunes a sábado<small>Agrega aquí el horario de atención</small></div></div>
+    <div><span>🎨</span><div>Asesoría de color<small>Te ayudamos a elegir el tono y la cantidad exacta</small></div></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="brand"><div class="mark"></div><div class="brand-name">Pinturas<br>Vía del Color</div></div>
+  <div class="tag">Todas las marcas · Al mejor precio · Bogotá</div>
+</footer>
+<div class="stripe"></div>
+
+</div>
+
+<!-- barra cotización -->
+<div class="cartbar" id="cartbar">
+  <div><small id="cartCount">0 productos</small><b id="cartTotal">$0</b></div>
+  <a class="btn btn-wa" id="cartSend" target="_blank" rel="noopener">Enviar cotización 📲</a>
+</div>
+
+<nav class="nav" id="nav">
+  <a href="#inicio" class="on"><span>🏠</span>Inicio</a>
+  <a href="#pinturas"><span>🎨</span>Pinturas</a>
+  <a href="#andamios"><span>🏗️</span>Andamios</a>
+  <a href="#contacto"><span>💬</span>Contacto</a>
+</nav>
+
+<script>
+/* ════════════════════════════════════════════
+   ⚙️ CONFIGURACIÓN — EDITA AQUÍ
+════════════════════════════════════════════ */
+const CONFIG = {
+  whatsapp: '573142227271',         // ← número del cliente (con 57, sin + ni espacios)
+  negocio: 'Pinturas Vía del Color',
+  andamio: {
+    tarifaCuerpoDia: 3500,           // COP por cuerpo, por día
+    transporte: 60000,               // COP (entrega + recogida)
+    anchoCuerpo: 2,                  // m
+    altoCuerpo: 1.5,                 // m
+    descuentos: [                    // por días de alquiler
+      { desde: 7,  pct: 10 },
+      { desde: 15, pct: 15 },
+      { desde: 30, pct: 25 }
+    ]
+  }
+};
+
+const MARCAS = ['Pintuco','Sherwin-Williams','Sika','Tito Pabón','Pintuland','Corona','Colmaq','Vinilos Davinci','Inducolor','Pintuobra'];
+const COLORES_MARCA = ['#E63946','#FF8C42','#FFC93C','#2BB673','#2D7DD2','#7B4FD6'];
+
+const CATEGORIAS = ['Todas','Vinilos','Esmaltes','Anticorrosivos','Impermeabilizantes','Lacas y barnices','Estucos y masillas','Accesorios'];
+
+/* ← AQUÍ VAN LOS PRODUCTOS (datos de ejemplo: reemplazar por los reales)
+   campos: cat, marca, nombre, pres (presentación), precio, color (HEX de la lata), tag (opcional), img (opcional: ruta de foto) */
+const PRODUCTOS = [
+  {cat:'Vinilos', marca:'Pintuco', nombre:'Vinilo Tipo 1 Blanco', pres:'Galón', precio:68000, color:'#F4F1EA', tag:'Más vendido'},
+  {cat:'Vinilos', marca:'Pintuco', nombre:'Vinilo Tipo 1 Blanco', pres:'Cuñete 5 gal', precio:315000, color:'#F4F1EA'},
+  {cat:'Vinilos', marca:'Sherwin-Williams', nombre:'Vinilo Lavable Marfil', pres:'Galón', precio:89000, color:'#F3E3B8'},
+  {cat:'Vinilos', marca:'Tito Pabón', nombre:'Vinilo Tipo 2 Blanco', pres:'Galón', precio:42000, color:'#EDEAE2', tag:'Económico'},
+  {cat:'Vinilos', marca:'Corona', nombre:'Vinilo Color Azul Cielo', pres:'Galón', precio:72000, color:'#7DB7E8'},
+  {cat:'Esmaltes', marca:'Pintuco', nombre:'Esmalte Sintético Negro', pres:'Galón', precio:95000, color:'#23232B'},
+  {cat:'Esmaltes', marca:'Sherwin-Williams', nombre:'Esmalte Rojo Colonial', pres:'Galón', precio:105000, color:'#C8283A'},
+  {cat:'Esmaltes', marca:'Pintuland', nombre:'Esmalte Blanco Brillante', pres:'1/4 galón', precio:28000, color:'#FAFAF7'},
+  {cat:'Anticorrosivos', marca:'Pintuco', nombre:'Anticorrosivo Gris', pres:'Galón', precio:78000, color:'#8E949C'},
+  {cat:'Anticorrosivos', marca:'Inducolor', nombre:'Anticorrosivo Rojo Óxido', pres:'Galón', precio:65000, color:'#A5412F'},
+  {cat:'Impermeabilizantes', marca:'Sika', nombre:'Impermeabilizante Terrazas', pres:'Cuñete', precio:285000, color:'#E4572E', tag:'Obra'},
+  {cat:'Impermeabilizantes', marca:'Pintuco', nombre:'Manto Acrílico Blanco', pres:'Galón', precio:118000, color:'#F1F4F7'},
+  {cat:'Lacas y barnices', marca:'Pintuco', nombre:'Barniz Transparente Brillante', pres:'Galón', precio:92000, color:'#E9B04A'},
+  {cat:'Lacas y barnices', marca:'Sherwin-Williams', nombre:'Laca Mate para Madera', pres:'Galón', precio:128000, color:'#C98A4B'},
+  {cat:'Estucos y masillas', marca:'Pintuco', nombre:'Estuco Plástico', pres:'Galón', precio:38000, color:'#D8D3C8'},
+  {cat:'Estucos y masillas', marca:'Corona', nombre:'Masilla Acrílica', pres:'Kilo', precio:14000, color:'#CFCFC6'},
+  {cat:'Accesorios', marca:'Varias', nombre:'Rodillo Profesional 9"', pres:'Unidad', precio:16000, color:'#FFC93C'},
+  {cat:'Accesorios', marca:'Varias', nombre:'Brocha 3 pulgadas', pres:'Unidad', precio:12000, color:'#2D7DD2'},
+  {cat:'Accesorios', marca:'Varias', nombre:'Cinta de enmascarar', pres:'Rollo 48 mm', precio:6500, color:'#E8D8A8'},
+  {cat:'Accesorios', marca:'Varias', nombre:'Lija de agua / pliego', pres:'Unidad', precio:2500, color:'#7B4FD6'}
+].map((p,i)=>({id:i,...p}));
+
+/* ════════════════════════════════════════════ */
+const $ = s => document.querySelector(s);
+const cop = n => '$' + Math.round(n).toLocaleString('es-CO');
+const waLink = txt => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`;
+
+/* contacto */
+$('#waMain').href = waLink(`Hola! Vi el catálogo de ${CONFIG.negocio} y quiero información 🎨`);
+
+/* marcas */
+(function(){
+  const items = MARCAS.concat(MARCAS).map((m,i)=>`<div class="chipb"><i style="background:${COLORES_MARCA[i%6]}"></i>${m}</div>`).join('');
+  $('#marquee').innerHTML = items;
+})();
+
+/* lata SVG */
+function lata(color){
+  return `<svg viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="40" cy="14" rx="30" ry="9" fill="#B9BCC4"/>
+    <rect x="10" y="14" width="60" height="68" rx="3" fill="#D5D8DE"/>
+    <ellipse cx="40" cy="82" rx="30" ry="9" fill="#C3C6CD"/>
+    <rect x="10" y="30" width="60" height="38" fill="#fff"/>
+    <rect x="10" y="30" width="60" height="38" fill="${color}" opacity=".95"/>
+    <rect x="10" y="30" width="60" height="38" fill="none" stroke="rgba(0,0,0,.12)"/>
+    <path d="M10 30c8 8 14-2 22 4s14-4 22 2 12 0 16-4V30z" fill="${color}"/>
+    <ellipse cx="40" cy="14" rx="30" ry="9" fill="${color}" opacity=".9"/>
+    <ellipse cx="40" cy="13" rx="22" ry="5.5" fill="rgba(255,255,255,.35)"/>
+    <rect x="52" y="6" width="3" height="10" rx="1.5" fill="#8A8D95"/>
+  </svg>`;
+}
+function fondoTarjeta(c){ return `linear-gradient(160deg, ${c}30, ${c}12 60%, #fff)`; }
+
+/* estado */
+let cat = 'Todas', marca = 'Todas', texto = '';
+const cart = {};
+
+/* filtros */
+$('#cats').innerHTML = CATEGORIAS.map(c=>`<button class="f ${c==='Todas'?'on':''}" data-c="${c}">${c}</button>`).join('');
+$('#cats').addEventListener('click', e=>{
+  const b = e.target.closest('.f'); if(!b) return;
+  cat = b.dataset.c;
+  document.querySelectorAll('.f').forEach(x=>x.classList.toggle('on', x===b));
+  render();
+});
+const marcasProd = ['Todas', ...new Set(PRODUCTOS.map(p=>p.marca))];
+$('#brandSel').innerHTML = marcasProd.map(m=>`<option>${m}</option>`).join('');
+$('#brandSel').onchange = e=>{ marca = e.target.value; render(); };
+$('#q').oninput = e=>{ texto = e.target.value.toLowerCase().trim(); render(); };
+
+/* render productos */
+function render(){
+  const lista = PRODUCTOS.filter(p =>
+    (cat==='Todas' || p.cat===cat) &&
+    (marca==='Todas' || p.marca===marca) &&
+    (!texto || (p.nombre+' '+p.marca+' '+p.cat).toLowerCase().includes(texto))
+  );
+  $('#grid').innerHTML = lista.length ? lista.map((p,i)=>{
+    const q = cart[p.id]||0;
+    const imagen = p.img ? `<img src="${p.img}" alt="${p.nombre}" style="width:100%;height:120px;object-fit:cover">` : lata(p.color);
+    return `<article class="prod" style="animation-delay:${i*40}ms">
+      <div class="prod-img" style="background:${fondoTarjeta(p.color)}">
+        ${p.tag?`<span class="tag">${p.tag}</span>`:''}${imagen}
+      </div>
+      <div class="prod-body">
+        <div class="prod-brand">${p.marca}</div>
+        <div class="prod-name">${p.nombre}</div>
+        <div class="prod-pres">${p.pres}</div>
+        <div class="prod-foot">
+          <div class="price">${cop(p.precio)}</div>
+          ${q? `<div class="qty"><button onclick="cambiar(${p.id},-1)">−</button><b>${q}</b><button onclick="cambiar(${p.id},1)">+</button></div>`
+             : `<button class="add" onclick="cambiar(${p.id},1)" aria-label="Agregar">+</button>`}
+        </div>
+      </div>
+    </article>`;
+  }).join('') : `<div class="empty">😕 No encontramos productos con ese filtro.<br>Escríbenos por WhatsApp, seguro lo conseguimos.</div>`;
+}
+function cambiar(id,d){
+  cart[id] = Math.max(0,(cart[id]||0)+d);
+  if(!cart[id]) delete cart[id];
+  render(); actualizarCarrito();
+}
+function actualizarCarrito(){
+  const ids = Object.keys(cart);
+  const unidades = ids.reduce((a,i)=>a+cart[i],0);
+  const total = ids.reduce((a,i)=>a+cart[i]*PRODUCTOS[i].precio,0);
+  $('#cartbar').classList.toggle('show', unidades>0);
+  $('#cartCount').textContent = unidades + (unidades===1?' producto':' productos');
+  $('#cartTotal').textContent = cop(total);
+  const lineas = ids.map(i=>{const p=PRODUCTOS[i];return `• ${cart[i]} x ${p.nombre} (${p.marca}, ${p.pres}) — ${cop(p.precio*cart[i])}`}).join('\n');
+  $('#cartSend').href = waLink(`Hola! Quiero cotizar estos productos de ${CONFIG.negocio} 🎨\n\n${lineas}\n\nTotal estimado: ${cop(total)}\n¿Me confirman disponibilidad y precio?`);
+}
+render(); actualizarCarrito();
+
+/* ════════ CALCULADOR DE ANDAMIOS ════════ */
+const A = CONFIG.andamio;
+let modo = 1, cuerpos = 6;
+
+function pctDesc(d){ let p=0; A.descuentos.forEach(x=>{ if(d>=x.desde) p=x.pct; }); return p; }
+
+function calcular(){
+  const dias = +$('#dias').value;
+  $('#dVal').textContent = dias + (dias===1?' día':' días');
+
+  let n, m2 = null;
+  if(modo===1){ n = cuerpos; }
+  else{
+    const ancho = Math.max(0, +$('#ancho').value||0), alto = Math.max(0, +$('#alto').value||0);
+    n = Math.max(1, Math.ceil(ancho/A.anchoCuerpo) * Math.ceil(alto/A.altoCuerpo));
+    m2 = ancho*alto;
+    $('#badgeCuerpos').textContent = `≈ ${n} cuerpos necesarios`;
+  }
+  const sub = n * dias * A.tarifaCuerpoDia;
+  const pct = pctDesc(dias);
+  const desc = sub * pct/100;
+  const tr = $('#transp').checked ? A.transporte : 0;
+  const total = sub - desc + tr;
+
+  $('#total').textContent = cop(total);
+  $('#rDet').textContent = `${n} cuerpos × ${dias} d`;
+  $('#rSub').textContent = cop(sub);
+  $('#rDescRow').style.display = pct? 'flex':'none';
+  $('#rDescLbl').textContent = `Descuento por ${dias} días (${pct}%)`;
+  $('#rDesc').textContent = '−' + cop(desc);
+  $('#rTr').textContent = tr? cop(tr) : 'No incluido';
+  $('#kDia').textContent = cop(total/dias);
+  $('#kmWrap').style.display = m2 ? 'block':'none';
+  if(m2) $('#kM2').textContent = cop(total/m2);
+
+  /* insignias de descuento */
+  $('#descBadges').innerHTML = A.descuentos.map(x=>`<span class="badge ${dias>=x.desde?'hot':''}">${x.desde}+ días: −${x.pct}%</span>`).join('');
+
+  const medidas = modo===2 ? `\nMedidas de la fachada: ${$('#ancho').value} m de ancho × ${$('#alto').value} m de alto` : '';
+  $('#calcWa').href = waLink(
+`Hola! Quiero cotizar el alquiler de andamios con ${CONFIG.negocio} 🏗️
+${medidas}
+• Cuerpos: ${n}
+• Días: ${dias}
+• Transporte: ${tr?'Sí':'No'}
+• Total estimado: ${cop(total)}
+
+¿Tienen disponibilidad?`);
+}
+$('#cMenos').onclick = ()=>{ cuerpos=Math.max(1,cuerpos-1); $('#cVal').textContent=cuerpos; calcular(); };
+$('#cMas').onclick   = ()=>{ cuerpos=Math.min(500,cuerpos+1); $('#cVal').textContent=cuerpos; calcular(); };
+['#dias','#ancho','#alto','#transp'].forEach(s=>$(s).addEventListener('input',calcular));
+function setModo(m){
+  modo=m;
+  $('#m1').classList.toggle('on',m===1); $('#m2').classList.toggle('on',m===2);
+  $('#modo1').style.display = m===1?'block':'none';
+  $('#modo2').style.display = m===2?'block':'none';
+  calcular();
+}
+$('#m1').onclick=()=>setModo(1); $('#m2').onclick=()=>setModo(2);
+calcular();
+
+/* ════════ NAV ACTIVO ════════ */
+const secs = ['inicio','pinturas','andamios','contacto'].map(id=>document.getElementById(id));
+const links = [...document.querySelectorAll('#nav a')];
+addEventListener('scroll', ()=>{
+  let act = 0;
+  secs.forEach((s,i)=>{ if(s.getBoundingClientRect().top < innerHeight*0.4) act = i; });
+  links.forEach((l,i)=>l.classList.toggle('on', i===act));
+}, {passive:true});
+</script>
+</body>
+</html>
