@@ -511,14 +511,14 @@ const PALETAS = {
    📦 PRODUCTOS  (datos de ejemplo; los precios NO se muestran, todo se cotiza por WhatsApp)
    - paleta: 'vinilo' | 'esmalte' | 'anti' | 'imper' | (vacío = sin colores)
    - pres:    presentaciones disponibles ['cuarto','galon','balde','cunete','kilo','unidad']  (sin precios: se cotiza por WhatsApp)
-   - img:    foto del balde, ej. 'img/VINILO_TIPO_1' (acepta png, jpg, jpeg o webp) (si no existe, se muestra una lata dibujada)
+   - img:    foto del balde, ej. 'VINILO_TIPO_1' (en la misma carpeta que index.html) (acepta png, jpg, jpeg o webp) (si no existe, se muestra una lata dibujada)
    - cc:     color de la lata dibujada cuando no hay foto
 ════════════════════════════════════════════ */
 const PRODUCTOS = [
-  {cat:'Vinilos', nombre:'Vinilo Tipo 1', paleta:'vinilo', img:'img/VINILO_TIPO_1', cc:'#F4F1EA', tag:'Más vendido',
+  {cat:'Vinilos', nombre:'Vinilo Tipo 1', paleta:'vinilo', img:'VINILO_TIPO_1', cc:'#F4F1EA', tag:'Más vendido',
    desc:'Vinilo para muros y techos, de buen cubrimiento y rendimiento. Disponible en todos los colores.',
    pres:['cuarto', 'galon', 'balde', 'cunete']},
-  {cat:'Vinilos', nombre:'Vinilo Tipo 2', paleta:'vinilo', img:'img/VINILO_TIPO_2', cc:'#EDEAE2', tag:'Económico',
+  {cat:'Vinilos', nombre:'Vinilo Tipo 2', paleta:'vinilo', img:'VINILO_TIPO_2', cc:'#EDEAE2', tag:'Económico',
    desc:'Opción económica para obras y repintes. Disponible en todos los colores.',
    pres:['cuarto', 'galon', 'balde', 'cunete']},
   {cat:'Vinilos', nombre:'Vinilo Lavable', paleta:'vinilo', cc:'#F3E3B8',
